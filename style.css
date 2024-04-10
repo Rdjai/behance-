@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+
+html,
+body {
+
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+}
+
+.left {
+    display: block;
+    width: 60%;
+    height: 100%;
+    background: teal;
+}
+
+.right {
+    width: 40%;
+    height: 100%;
+    /* background-color: grey; */
+    position: relative;
+}
+
+.rtop {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    background-color: royalblue;
+}
+
+.rbottom {
+    width: 100%;
+    height: 50%;
+    background-color: yellow;
+    background-image: url(https://images.unsplash.com/photo-1619241638225-14d56e47ae64?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+.Rightfirst {
+    height: 100%;
+    width: 50%;
+    /* background-color: aqua; */
+    background-image: url(https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+.Rightsecond {
+    height: 100%;
+    width: 50%;
+    background-color: chocolate;
+    background-image: url(https://images.unsplash.com/photo-1586788224331-947f68671cf1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG9yYW5nZXxlbnwwfHwwfHx8MA%3D%3D);
+    background-size: cover;
+    background-position: bottom;
+}
+
+
+.nav {
+    display: flex;
+    width: 100%;
+    padding: 20px 30px;
+}
+
+.nav ul {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+
+    font-size: 20px;
+}
+
+#iconCss {
+    font-size: 22px;
+    color: grey;
+}
+
+#TwitterIcons {
+    font-size: 20px;
+    color: #1DA1F2;
+}
+
+.right .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center h1 {
+    font-size: 90px;
+    font-weight: 900;
+}
+
+.center p {
+    opacity: .6;
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 20;
+    margin-top: 20px;
+}
+
+.center a {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: .6;
+}
+
+
+@media (max-width: 500px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .main .left {
+        width: 100%;
+    }
+
+    .main .right {
+        width: 100%;
+    }
+}
